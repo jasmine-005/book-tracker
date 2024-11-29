@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #a0e399;
 }
 
 .navbar {
@@ -60,12 +60,12 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: #536833;
+    background-color: #289942;
 
 }
 
