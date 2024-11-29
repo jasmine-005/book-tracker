@@ -6,7 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header styles */
 .navbar {
     background-color: #2e7d32; /* Green theme */
     display: flex;
@@ -66,6 +65,8 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: #536833;
+
 }
 
 /* Title section */
