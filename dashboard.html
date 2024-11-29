@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSU Library</title>
+   <link rel="stylesheet" type="text/css" href="styles.css"
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <img src="ifsulogo.png" alt="Library Logo">
+        <h4>IFSU Library</h4>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+          
+            <div class="dropdown">
+                <button class="dropbtn">Manage Resources</button>
+                <div class="dropdown-content">
+                    <a href="#add-resources">Add Resources</a>
+                    <a href="#view-resources">View Resources</a>
+                    <a href="#manage-inventory">Manage Inventory</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Manage Client</button>
+                <div class="dropdown-content">
+                    <a href="#user-request">Client List</a>
+                    <a href="#view-clients">Client Activity</a>
+                </div>
+            </div>
+            <a href="#book-request">Book Request</a>
+            <a href="#returned-books">Returned Books</a>
+            <a href="#set-fines">Set-Up Fines</a>
+            <a href="logout.php">Logout</a> <!-- Logout link -->
+        </div>
+
+        <!-- Profile and Notifications -->
+        <div class="profile-section">
+            <div class="notifications">
+                <span class="bell-icon">&#128276;</span> <!-- Bell icon for notifications -->
+                <span class="count"><?php echo $notificationCount; ?></span> <!-- Notification count -->
+            </div>
+            
+            <div class="profile">
+                <span>Welcome, <?php echo $_SESSION['admin_name']; ?></span> <!-- Display librarian's name -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard content -->
+    <div class="dashboard-content">
+        <div class="dashboard-section">
+            <h3>Overview</h3>
+            <p>Welcome to the IFSU Library Management System. Here you can manage books, view borrowed and returned books, and much more.</p>
+        </div>
+
+        <div class="dashboard-section">
+            <h3>Books Overview</h3>
+            <!-- Placeholder for book-related content -->
+        </div>
+
+        <div class="dashboard-section">
+            <h3>Borrow Requests</h3>
+            <!-- Placeholder for borrow requests -->
+        </div>
+    </div>
+
+</body>
+</html>
